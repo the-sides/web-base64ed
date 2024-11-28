@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Web de-Base64ed Extension",
+    "description": "Automatically decode base64-encoded text on a webpage",
+    "version": "1.0",
+    "action": {
+        "default_title": "Web de-Base64ed Extension",
+        "default_icon": "logo.png"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "scripts/main.js"
+            ],
+            "matches": [
+                "https://www.youtube.com/*"
+            ]
+        }
+    ]
+}
